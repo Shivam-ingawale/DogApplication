@@ -8,17 +8,7 @@
 
     tools:context=".BreedDetailScreen">
 
-    <!--    <androidx.recyclerview.widget.RecyclerView-->
-    <!--        android:id="@+id/recyclerView"-->
-    <!--        android:layout_width="match_parent"-->
-
-    <!--        android:layout_height="match_parent"-->
-    <!--        android:scrollbars="vertical"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent" />-->
-    <TextView
+     <TextView
         android:id="@+id/textBreed"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -60,8 +50,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="5"
-        android:minWidth="80dp"
-        android:minHeight="80dp"
+        android:minWidth="60dp"
+        android:minHeight="60dp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

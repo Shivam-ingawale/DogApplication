@@ -14,6 +14,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -44,12 +45,10 @@ public class HomeFragment extends Fragment {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-//        final TextView textView = binding.textHome;
         final ListView listView = binding.listView;
-        final ProgressBar progressBar = binding.progressBarHome;
-
-        progressBar.setVisibility(View.GONE);
-
+        if (DogListRepo.getDogListRepo().getDogNameList().isEmpty()) {
+                Toast.makeText(getActivity(),"No Internet Access",Toast.LENGTH_LONG).show();
+        }
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(getContext(),
                 R.layout.dog_breed_name,
                 DogListRepo.getDogListRepo().getDogNameList());
