@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imageBreed"
+            android:layout_width="0dp"
+            android:minHeight="500dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginEnd="9dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:riv_corner_radius="12dp" />
+<!--    <ImageView-->
+<!--        android:id="@+id/imageBreed"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:layout_marginStart="9dp"-->
+<!--        android:layout_marginEnd="9dp"-->
+<!--        android:adjustViewBounds="true"-->
+<!--        android:minHeight="250dp"-->
+<!--        android:scaleType="fitCenter"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <ImageButton
+        android:id="@+id/imageDownButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginEnd="16dp"
+        android:alpha="0"
+        android:background="#00000000"
+        android:contentDescription="@string/download"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_archive_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageBreed"
+        app:layout_constraintTop_toTopOf="@+id/imageBreed"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_purple"
+
+    tools:context=".BreedDetailScreen">
+
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/recyclerView"-->
+    <!--        android:layout_width="match_parent"-->
+
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:scrollbars="vertical"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+    <TextView
+        android:id="@+id/textBreed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/gold_ish"
+        android:textIsSelectable="true"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/backButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:backgroundTint="#00000000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_direct_left"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/light_purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/textBreed" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar_cyclic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:minWidth="80dp"
+        android:minHeight="80dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    <?xml version="1.0" encoding="utf-8"?>-->
+    <!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context=".BreedDetailScreen">-->
+
+    <!--&lt;!&ndash;    <androidx.recyclerview.widget.RecyclerView&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:id="@+id/recyclerView"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+
+    <!--&lt;!&ndash;        android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:scrollbars="vertical"&ndash;&gt;-->
+    <!--&lt;!&ndash;        app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;        app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;        app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;        app:layout_constraintTop_toTopOf="parent" />&ndash;&gt;-->
+    <!--<TextView-->
+    <!--    android:id="@+id/textBreed"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:textSize="35sp"-->
+    <!--    android:textAlignment="center"-->
+    <!--    android:textStyle="italic|bold"-->
+    <!--    android:textColor="@color/purple_700"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    app:layout_constraintBottom_toTopOf="@+id/imageView1"-->
+    <!--    app:layout_constraintEnd_toEndOf="parent"-->
+    <!--    app:layout_constraintStart_toStartOf="parent"-->
+    <!--    app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<com.makeramen.roundedimageview.RoundedImageView-->
+    <!--    android:id="@+id/imageView1"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_margin="10dp"-->
+    <!--    android:adjustViewBounds="true"-->
+    <!--    android:minHeight="250dp"-->
+    <!--    android:scaleType="fitCenter"-->
+    <!--    app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--    app:layout_constraintEnd_toEndOf="parent"-->
+    <!--    app:layout_constraintHorizontal_bias="0.5"-->
+    <!--    app:layout_constraintStart_toStartOf="parent"-->
+    <!--    app:layout_constraintTop_toTopOf="parent"-->
+    <!--    app:layout_constraintVertical_bias="0.40"-->
+    <!--    app:riv_corner_radius="12dp" />-->
+
+    <!--<ImageButton-->
+    <!--    android:id="@+id/archive"-->
+    <!--    android:alpha="0"-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_margin="15dp"-->
+    <!--    android:background="#00000000"-->
+    <!--    android:scaleType="fitCenter"-->
+    <!--    android:src="@drawable/ic_archive_add"-->
+    <!--    app:layout_constraintEnd_toEndOf="@+id/imageView1"-->
+    <!--    app:layout_constraintTop_toTopOf="@+id/imageView1" />-->
+
+    <!--<ProgressBar-->
+    <!--    android:id="@+id/progressBar_cyclic"-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_weight="5"-->
+    <!--    android:minWidth="80dp"-->
+    <!--    android:minHeight="80dp"-->
+    <!--    android:visibility="visible"-->
+    <!--    app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--    app:layout_constraintEnd_toEndOf="parent"-->
+    <!--    app:layout_constraintStart_toStartOf="parent"-->
+    <!--    app:layout_constraintTop_toTopOf="parent" />-->
+    <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
