@@ -23,7 +23,7 @@ Favorite Section allow user to access their liked images. Explore section helps 
 <table align="center">
       <tr>
         <td><img width="120" alt="chdemko" src="https://github.com/Shivam-ingawale/DogApplication/blob/master/Dog%20Application/1.png"></a></td>
-        <td><img width="120" alt="chendaniely" src="https://github.com/Shivam-ingawale/DogApplication/blob/master/Dog%20Application/2.png"></a></td>
+        <td><img width="120" alt="chendaniely" src="https://github.com/Shivam-ingawale/DogApplication/blob/master/Dog%20Application/2.jpg"></a></td>
       </tr>
       <tr>
         <td><img width="120" alt="marisbotero" src="https://github.com/Shivam-ingawale/DogApplication/blob/master/Dog%20Application/3.png"></a></td>
