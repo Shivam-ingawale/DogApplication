@@ -7,10 +7,12 @@
 
 
 ## About
+<!-- 
+https://user-images.githubusercontent.com/61245329/134811635-1410305d-4279-4ed5-94f9-fd28c02f6cf0.mp4 -->
 
-https://user-images.githubusercontent.com/61245329/134811635-1410305d-4279-4ed5-94f9-fd28c02f6cf0.mp4
+https://user-images.githubusercontent.com/61245329/134854714-edf636f6-7596-4734-97a7-83cc46dd0a45.mp4
 
-  
+
  
 Create a basic android app to browse Dog breeds and show their images.  Data can be fetched from a JSON API defined in the following documentation –
 API documentation: https://dog.ceo/dog-api/documentation/ 
